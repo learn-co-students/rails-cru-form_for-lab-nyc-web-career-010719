@@ -1,0 +1,7 @@
+<h1>Genres#edit</h1>
+<p>Find me in app/views/genres/edit.html.erb</p>
+<%= form_tag genres_path do %>
+  <label>Genre Name:</label><br>
+  <%= text_field_tag :'genre[name]' %><br>
+  <%= submit_tag "Create Genre" %>
+<% end %>

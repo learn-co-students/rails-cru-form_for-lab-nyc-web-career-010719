@@ -1,0 +1,11 @@
+<h1>Songs#new</h1>
+<p>Find me in app/views/songs/new.html.erb</p>
+
+
+<%= form_tag songs_path do %>
+  <label>Genre Name:</label><br>
+  Song Name: <%= text_field_tag :'song[name]' %><br>
+  Genre: <%= text_field_tag :'song[genre_id]' %><br>
+  Artist: <%= text_field_tag :'song[artist_id]' %><br>
+  <%= submit_tag "Create Song" %>
+<% end %>
